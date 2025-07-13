@@ -374,10 +374,9 @@ body {
 
 .settings-options select {
     background-color: hsl(
-        var(--color-accent-h),
-        var(--color-accent-s),
-        var(--color-accent-l),
-        0.25
+        var(--color-background-h),
+        var(--color-background-s),
+        var(--color-background-l)Z
     );
     padding: 0.5rem 0.7rem;
     border-radius: 0.35rem;
