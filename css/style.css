@@ -384,36 +384,49 @@ body {
 }
 
 .settings-options input[type="color"] {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     padding: 0;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 50%;
+    width: 0;
+    height: 0;
     border: none;
 }
-.settings-options input[type="color"]::-webkit-color-swatch {
-    width: 30px;
-    height: 30px;
+
+.color-picker-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 5px solid hsl(
+        var(--color-accent-h),
+        var(--color-accent-s),
+        calc(var(--color-accent-l) - 25%)
+    );
     border-radius: 50%;
-    border-width: 0.3rem;
-    border-color: hsl(
+    background-color: hsl(
+        var(--color-primary-h),
+        var(--color-primary-s),
+        var(--color-primary-l)
+    );
+    cursor: pointer;
+}
+
+#color-picker-button-primary {
+    background-color: hsl(
+        var(--color-primary-h),
+        var(--color-primary-s),
+        var(--color-primary-l)
+    );
+}
+
+#color-picker-button-accent {
+    background-color: hsl(
         var(--color-accent-h),
         var(--color-accent-s),
         var(--color-accent-l)
     );
 }
-.settings-options input[type="color"]::-moz-color-swatch {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border-width: 0.3rem;
-    border-color: hsl(
-        var(--color-accent-h),
-        var(--color-accent-s),
-        var(--color-accent-l)
+
+#color-picker-button-background {
+    background-color: hsl(
+        var(--color-background-h),
+        var(--color-background-s),
+        var(--color-background-l)
     );
 }

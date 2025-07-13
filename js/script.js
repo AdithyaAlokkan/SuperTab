@@ -288,6 +288,11 @@ $(document).ready(function () {
 		$('#input-color-accent').val(JSON.parse(localStorage.colorAccent).hex)
 	if (localStorage.colorBackground)
 		$('#input-color-background').val(JSON.parse(localStorage.colorBackground).hex)
+
+	// Color Picker Button
+	$(document).on('click', '.color-picker-button', function () {
+		$(this).siblings('input[type="color"]').click()
+	})
 })
 
 /* Function Definitions */
