@@ -376,7 +376,7 @@ body {
     background-color: hsl(
         var(--color-background-h),
         var(--color-background-s),
-        var(--color-background-l)Z
+        var(--color-background-l)
     );
     padding: 0.5rem 0.7rem;
     border-radius: 0.35rem;
@@ -392,11 +392,12 @@ body {
 .color-picker-button {
     width: 1.5rem;
     height: 1.5rem;
-    border: 5px solid hsl(
-        var(--color-accent-h),
-        var(--color-accent-s),
-        calc(var(--color-accent-l) - 25%)
-    );
+    border: 5px solid
+        hsl(
+            var(--color-accent-h),
+            var(--color-accent-s),
+            calc(var(--color-accent-l) - 25%)
+        );
     border-radius: 50%;
     background-color: hsl(
         var(--color-primary-h),
